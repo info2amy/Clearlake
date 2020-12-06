@@ -1,11 +1,17 @@
 import React from "react";
-import './Homepage.css';
+import "./Homepage.css";
 
-const Homepage = () => {
+const Homepage = (props) => {
+  const cabinPage = props.cabins.map((cabinPage) => {
+    return <li>{cabinPage.fields.cabin}</li>;
+  });
+
   return (
     <div>
       <h1>Clearlake!</h1>
-    </div>;)
+      <ul>{cabinPage}</ul>
+    </div>
+  );
 };
 
 export default Homepage;
