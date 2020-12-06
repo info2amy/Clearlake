@@ -1,23 +1,42 @@
-import logo from './logo.svg';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
+import { Route, Link } from 'react-router-dom'
+
+import { baseURL, config } from 
+
+import Homepage from './components/Homepage';
+import Nav from './components/Nav';
+import CabinPages from './components/CabinPages';
+import LakeHistory from './components/LakeHistory';
+
 import './App.css';
 
 function App() {
+  const [message, setMessage] = useState([]);
+
+  const getMessage = async () {
+    const resp = await axios.get(baseURL, config)
+    console.log(resp);
+}
+
+  useEffect(() => {
+    getMessage
+  },[])
+  
+
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav />
+      <Route exact path='/'>
+        <Homepage />
+      </Route>
+      <Route >
+        <LakeHistory />
+      </Route>
+
+
     </div>
   );
 }
