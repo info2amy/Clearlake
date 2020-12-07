@@ -28,13 +28,16 @@ export default function App() {
   return (
     <div className="App">
       <Nav />
+
       <Route exact path='/'>
         <Homepage cabins={cabins} />
       </Route>
+
       <Route path='/history'>
         <LakeHistory />
       </Route>
-      <Route path='/indivCabin:cabinID'>
+
+      <Route path='/indivCabin/:cabinID'>
         <CabinPages cabins={cabins} />
       </Route>
 
