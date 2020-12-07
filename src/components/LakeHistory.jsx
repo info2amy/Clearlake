@@ -1,7 +1,7 @@
 import React from "react";
 import "./LakeHistory.css";
 
-const LakeHistory = () => {
+export default function LakeHistory() {
   return (
     <div>
       <h2>The Story of Clearlake</h2>
@@ -14,6 +14,4 @@ const LakeHistory = () => {
       </p>
     </div>
   );
-};
-
-export default LakeHistory;
+}

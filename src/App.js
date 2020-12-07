@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Route, Link } from 'react-router-dom'
+import { Route } from 'react-router-dom'
 
 import { baseURL, config } from "./services"
 
@@ -11,7 +11,7 @@ import LakeHistory from './components/LakeHistory';
 
 import './App.css';
 
-function App() {
+export default function App() {
   const [cabins, setCabins] = useState([]);
 
   const getCabins = async () => {
@@ -23,7 +23,7 @@ function App() {
   useEffect(() => {
     getCabins()
   },[])
-  
+
 
   return (
     <div className="App">
@@ -34,12 +34,11 @@ function App() {
       <Route path='/history'>
         <LakeHistory />
       </Route>
-      <Route path='/messages'>
-        <CabinPages />
+      <Route path='/indivCabin:cabinID'>
+        <CabinPages cabins={cabins} />
       </Route>
 
     </div>
-  );
+  )
 }
 
-export default App;
