@@ -25,8 +25,8 @@ export default function CabinPages(props) {
       <div key={event.id}>
         <br />
         <h5>on {event.fields.eventDate}</h5>
-        <h3>{event.fields.contributor}</h3>
-        <p>added - {event.fields.event}</p>
+        <h3>{event.fields.contributor} added</h3>
+        <p>{event.fields.event}</p>
       </div>
     );
   });
