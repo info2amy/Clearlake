@@ -8,29 +8,35 @@ import Homepage from './components/Homepage';
 import Nav from './components/Nav';
 import CabinPages from './components/CabinPages';
 import LakeHistory from './components/LakeHistory';
+import AddCabinEvent from "./components/AddCabinEvent";
 
 import './App.css';
 
 export default function App() {
   const [cabins, setCabins] = useState([]);
-  const [events, setEvents] = useState([])
+  const [events, setEvents] = useState([]);
+  const [refresh, triggerRefresh] = useState(false);
 
   const getCabins = async () => {
     const resp = await axios.get(`${baseURL}/clearlake`, config)
     console.log(resp);
     setCabins(resp.data.records);
-  }
+  };
 
   const getEvents = async () => {
     const resp = await axios.get(`${baseURL}/events`, config)
     console.log(resp);
     setEvents(resp.data.records);
-  }
+  };
+
+  const postCabinEventData = async () => {
+    const resp = await axios.post(`${baseURL}/events`, { fields: cabinEvent }, config)
+  };
 
   useEffect(() => {
     getCabins()
     getEvents()
-  },[])
+  },[refresh])
 
 
   return (
@@ -46,7 +52,13 @@ export default function App() {
       </Route>
 
       <Route path='/indivCabin/:cabinID'>
-        <CabinPages cabins={cabins} events={events} />
+        <CabinPages
+          cabins={cabins}
+          events={events}
+          postCabinEventData={postCabinEventData}
+          triggerRefresh={triggerRefresh}
+          refresh={refresh}
+        />
       </Route>
 
     </div>

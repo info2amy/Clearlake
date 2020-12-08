@@ -38,6 +38,7 @@ export default function CabinPages(props) {
           {cabinEventsJSX}
         </>
       )}
+      // Render AddCabinEvent form here AddCabinEvent();
       <Link to="/">back to Homepage</Link>
     </div>
   );
