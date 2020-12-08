@@ -1,5 +1,7 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
+import AddCabinEvent from "./AddCabinEvent";
+
 import "./CabinPages.css";
 
 export default function CabinPages(props) {
@@ -20,7 +22,7 @@ export default function CabinPages(props) {
   // MAP will map through the filtered events for the individual cabin, to render our events information
   const cabinEventsJSX = cabinEvents.map((event) => {
     return (
-      <div>
+      <div key={event.id}>
         <br />
         <h5>on {event.fields.eventDate}</h5>
         <h3>{event.fields.contributor}</h3>
@@ -38,7 +40,10 @@ export default function CabinPages(props) {
           {cabinEventsJSX}
         </>
       )}
-      // Render AddCabinEvent form here AddCabinEvent();
+      <AddCabinEvent
+        triggerRefresh={props.triggerRefresh}
+        refresh={props.refresh}
+      />
       <Link to="/">back to Homepage</Link>
     </div>
   );

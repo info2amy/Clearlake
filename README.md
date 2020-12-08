@@ -61,10 +61,10 @@ API sample
 ## MVP
 
 - Create an interactive app that will render data and allow new data to be added
-- Homepage will allow user to link to their respective cabin
-- Create and use external api through Airtable
-- Create a homepage for the entire family
-- Create separately linked pages for each of the family branches
+- Homepage will allow user to link to their respective cabin page
+- Create and use external API through Airtable
+- Create a Lake History page for the entire family
+- Create separate, linked pages for each of the family branches
 
 ## PostMVP
 

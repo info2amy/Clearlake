@@ -29,15 +29,10 @@ export default function App() {
     setEvents(resp.data.records);
   };
 
-  const postCabinEventData = async () => {
-    const resp = await axios.post(`${baseURL}/events`, { fields: cabinEvent }, config)
-  };
-
   useEffect(() => {
     getCabins()
     getEvents()
   },[refresh])
-
 
   return (
     <div className="App">
@@ -55,7 +50,6 @@ export default function App() {
         <CabinPages
           cabins={cabins}
           events={events}
-          postCabinEventData={postCabinEventData}
           triggerRefresh={triggerRefresh}
           refresh={refresh}
         />

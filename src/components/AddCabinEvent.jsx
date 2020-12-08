@@ -1,30 +1,43 @@
 import React, { useState } from "react";
-import { useHistory } from "react-router-dom";
+import { useHistory, useParams } from "react-router-dom";
+import axios from "axios";
+import { baseURL, config } from "../services";
+
 import "./AddCabinEvent.css";
 
 export default function AddCabinEvent(props) {
   const history = useHistory();
+  const { cabinID } = useParams();
 
   const [cabinEvent, setCabinEvent] = useState({
     event: "",
     eventDate: "",
     contributor: "",
-    cabin: [],
+    cabin: [cabinID],
   });
+
+  const postCabinEventData = async () => {
+    console.log(cabinEvent);
+    const resp = await axios.post(
+      `${baseURL}/events`,
+      { fields: cabinEvent },
+      config
+    );
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-
     setCabinEvent({
       ...cabinEvent,
       [name]: value,
     });
   };
 
-  const handleSubmit = () => {
-    props.postCabinEventData(cabinEvent);
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    postCabinEventData(cabinEvent);
     props.triggerRefresh(!props.refresh);
-    history.push("/");
+    // history.push("/");
   };
 
   return (
@@ -41,7 +54,7 @@ export default function AddCabinEvent(props) {
         />
         <input
           className="input-date"
-          type="text"
+          type="date"
           placeholder="Date of the Event"
           name="eventDate"
           value={cabinEvent.eventDate}
@@ -55,14 +68,14 @@ export default function AddCabinEvent(props) {
           value={cabinEvent.contributor}
           onChange={(e) => handleChange(e)}
         />
-        <input
+        {/* <input
           className="input-cabin"
           type="text"
           placeholder="Your Cabin"
           name="cabin"
           value={cabinEvent.cabin}
           onChange={(e) => handleChange(e)}
-        />
+        /> */}
         <input className="input-btn" type="submit" value="Submit" />
       </form>
     </div>
