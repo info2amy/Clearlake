@@ -5,7 +5,7 @@ import "./Nav.css";
 export default function Nav() {
   return (
     <nav className="navbar">
-      <Link to="/">Homepage</Link>
+      <Link to="/"> Home</Link>
       <br />
       <Link to="/history">History of Clearlake</Link>
     </nav>

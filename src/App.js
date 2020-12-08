@@ -13,15 +13,23 @@ import './App.css';
 
 export default function App() {
   const [cabins, setCabins] = useState([]);
+  const [events, setEvents] = useState([])
 
   const getCabins = async () => {
-    const resp = await axios.get(baseURL, config)
+    const resp = await axios.get(`${baseURL}/clearlake`, config)
     console.log(resp);
     setCabins(resp.data.records);
   }
 
+  const getEvents = async () => {
+    const resp = await axios.get(`${baseURL}/events`, config)
+    console.log(resp);
+    setEvents(resp.data.records);
+  }
+
   useEffect(() => {
     getCabins()
+    getEvents()
   },[])
 
 
@@ -38,7 +46,7 @@ export default function App() {
       </Route>
 
       <Route path='/indivCabin/:cabinID'>
-        <CabinPages cabins={cabins} />
+        <CabinPages cabins={cabins} events={events} />
       </Route>
 
     </div>
