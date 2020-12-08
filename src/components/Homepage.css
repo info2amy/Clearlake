@@ -4,3 +4,9 @@
   /* text-decoration:  none; */
   margin: 40px 100px;
 }
+
+.background {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
