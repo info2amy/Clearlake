@@ -5,7 +5,9 @@ import "./LakeHistory.css";
 export default function LakeHistory() {
   return (
     <div className="history-page">
-      <h2>The Story of Clearlake</h2>
+      <div className="history-header">
+        <h2>The Story of Clearlake</h2>
+      </div>
       <br />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis

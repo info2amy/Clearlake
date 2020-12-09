@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import linkImage1 from "../images/lake1.jpg";
 import linkImage2 from "../images/lake2.jpg";
 import linkImage3 from "../images/lake3.jpg";
-// import linkImage4 from "../images/lake4.jpg";
-// import linkImage5 from "../images/lake5.jpg";
-// import linkImage6 from "../images/lake6.jpg";
+import linkImage4 from "../images/lake4.jpg";
+import linkImage5 from "../images/lake5.jpg";
+import linkImage6 from "../images/lake6.jpg";
 // import linkImage7 from "../images/lake7.jpg";
 // import linkImage8 from "../images/lake8.jpg";
 // import linkImage9 from "../images/lake9.jpg";
@@ -13,7 +13,14 @@ import linkImage3 from "../images/lake3.jpg";
 import "./Homepage.css";
 
 export default function Homepage(props) {
-  const images = [linkImage1, linkImage2, linkImage3];
+  const images = [
+    linkImage1,
+    linkImage2,
+    linkImage3,
+    linkImage4,
+    linkImage5,
+    linkImage6,
+  ];
   // const [currImage, setCurrImage] = useState(images[0]);
   const [count, setCount] = useState(0);
 
@@ -23,23 +30,15 @@ export default function Homepage(props) {
       setCount(0);
     } else {
       setCount(count + 1);
-
-      // setCount((previousState) => {
-      //   console.log(previousState);
-      //   return (previousState += 1);
-      // });
     }
   };
-  // setInterval(() => {
-  //   slideShow();
-  // }, 10000);
 
   // useEffect(() => {
   //   const interval = setInterval(() => {
   //     slideShow();
   //   }, 5000);
   //   return () => clearInterval(interval);
-  // }, []);
+  // }, [count]);
 
   const eachCabin = props.cabins.map((cabin) => {
     console.log(cabin);

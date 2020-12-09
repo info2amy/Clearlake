@@ -1,4 +1,17 @@
 .history-page {
-  background-color: burlywood;
+  background-image: url("https://www.myfreetextures.com/wp-content/uploads/2014/10/paper59d5-900x1168.jpg");
   margin: 20px 80px;
+}
+
+.history-header {
+  height: 300px;
+  /* width: 80vh; */
+  background-image: url("https://i.dlpng.com/static/png/6810781_preview.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.history-header h2 {
+  padding-top: 130px;
 }
