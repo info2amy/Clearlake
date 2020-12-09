@@ -21,7 +21,6 @@ export default function Homepage(props) {
     linkImage5,
     linkImage6,
   ];
-  // const [currImage, setCurrImage] = useState(images[0]);
   const [count, setCount] = useState(0);
 
   const slideShow = () => {

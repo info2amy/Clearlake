@@ -37,12 +37,17 @@ export default function AddCabinEvent(props) {
     event.preventDefault();
     postCabinEventData(cabinEvent);
     props.triggerRefresh(!props.refresh);
-    // history.push("/");
+    inputClear();
   };
 
-  //   const inputClear = () {
-
-  // }
+  const inputClear = () => {
+    setCabinEvent({
+      event: "",
+      eventDate: "",
+      contributor: "",
+      cabin: [cabinID],
+    });
+  };
 
   return (
     <div className="submit-form">
@@ -55,6 +60,7 @@ export default function AddCabinEvent(props) {
           name="event"
           value={cabinEvent.event}
           onChange={(e) => handleChange(e)}
+          required
         />
         <input
           className="input-date"
@@ -63,6 +69,7 @@ export default function AddCabinEvent(props) {
           name="eventDate"
           value={cabinEvent.eventDate}
           onChange={(e) => handleChange(e)}
+          required
         />
         <input
           className="input-contributor"
@@ -71,6 +78,7 @@ export default function AddCabinEvent(props) {
           name="contributor"
           value={cabinEvent.contributor}
           onChange={(e) => handleChange(e)}
+          required
         />
         <input className="input-btn" type="submit" value="Submit" />
       </form>
