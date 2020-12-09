@@ -14,23 +14,31 @@ import "./Homepage.css";
 
 export default function Homepage(props) {
   const images = [linkImage1, linkImage2, linkImage3];
-  const [currImage, setCurrImage] = useState(images[0]);
+  // const [currImage, setCurrImage] = useState(images[0]);
   const [count, setCount] = useState(0);
 
-  // const slideShow = () => {
-  //   console.log(count);
-  //   setCurrImage(images[count]);
-  //   setCount(count + 1);
-  //   if (count === images.length) {
-  //     setCount(0);
-  //   }
-  //   console.log(currImage);
-  // };
+  const slideShow = () => {
+    console.log(count);
+    if (count === images.length - 1) {
+      setCount(0);
+    } else {
+      setCount(count + 1);
+
+      // setCount((previousState) => {
+      //   console.log(previousState);
+      //   return (previousState += 1);
+      // });
+    }
+  };
+  // setInterval(() => {
+  //   slideShow();
+  // }, 10000);
 
   // useEffect(() => {
-  //   setInterval(() => {
+  //   const interval = setInterval(() => {
   //     slideShow();
-  //   }, 2000);
+  //   }, 5000);
+  //   return () => clearInterval(interval);
   // }, []);
 
   const eachCabin = props.cabins.map((cabin) => {
@@ -47,7 +55,7 @@ export default function Homepage(props) {
   return (
     <div
       className="background"
-      style={{ backgroundImage: `url(${currImage})` }}
+      style={{ backgroundImage: `url(${images[count]})` }}
     >
       <h1>Clearlake!</h1>
       <ul>{eachCabin}</ul>
