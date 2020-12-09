@@ -17,21 +17,21 @@ export default function Homepage(props) {
   const [currImage, setCurrImage] = useState(images[0]);
   const [count, setCount] = useState(0);
 
-  const slideShow = () => {
-    console.log(count);
-    setCurrImage(images[count]);
-    setCount(count + 1);
-    if (count === images.length) {
-      setCount(0);
-    }
-    console.log(currImage);
-  };
+  // const slideShow = () => {
+  //   console.log(count);
+  //   setCurrImage(images[count]);
+  //   setCount(count + 1);
+  //   if (count === images.length) {
+  //     setCount(0);
+  //   }
+  //   console.log(currImage);
+  // };
 
-  useEffect(() => {
-    setInterval(() => {
-      slideShow();
-    }, 4000);
-  }, []);
+  // useEffect(() => {
+  //   setInterval(() => {
+  //     slideShow();
+  //   }, 2000);
+  // }, []);
 
   const eachCabin = props.cabins.map((cabin) => {
     console.log(cabin);
