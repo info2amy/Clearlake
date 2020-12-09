@@ -1,14 +1,37 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import linkImage1 from "../images/lake1.jpg";
+import linkImage2 from "../images/lake2.jpg";
+import linkImage3 from "../images/lake3.jpg";
+// import linkImage4 from "../images/lake4.jpg";
+// import linkImage5 from "../images/lake5.jpg";
+// import linkImage6 from "../images/lake6.jpg";
+// import linkImage7 from "../images/lake7.jpg";
+// import linkImage8 from "../images/lake8.jpg";
+// import linkImage9 from "../images/lake9.jpg";
+// import linkImage10 from "../images/lak10.jpg";
 import "./Homepage.css";
 
 export default function Homepage(props) {
-  const images = [linkImage1];
+  const images = [linkImage1, linkImage2, linkImage3];
   const [currImage, setCurrImage] = useState(images[0]);
-  // set up function to change the currImage;
-  // make sure that if it reaches the length of the array, that it starts again at the beginning;
-  // setInterval, to call the function every "x" seconds;
+  const [count, setCount] = useState(0);
+
+  const slideShow = () => {
+    console.log(count);
+    setCurrImage(images[count]);
+    setCount(count + 1);
+    if (count === images.length) {
+      setCount(0);
+    }
+    console.log(currImage);
+  };
+
+  useEffect(() => {
+    setInterval(() => {
+      slideShow();
+    }, 4000);
+  }, []);
 
   const eachCabin = props.cabins.map((cabin) => {
     console.log(cabin);

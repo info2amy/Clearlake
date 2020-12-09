@@ -40,6 +40,10 @@ export default function AddCabinEvent(props) {
     // history.push("/");
   };
 
+  //   const inputClear = () {
+
+  // }
+
   return (
     <div className="submit-form">
       <h3>Add an event to your cabin's history log!:</h3>
@@ -68,14 +72,6 @@ export default function AddCabinEvent(props) {
           value={cabinEvent.contributor}
           onChange={(e) => handleChange(e)}
         />
-        {/* <input
-          className="input-cabin"
-          type="text"
-          placeholder="Your Cabin"
-          name="cabin"
-          value={cabinEvent.cabin}
-          onChange={(e) => handleChange(e)}
-        /> */}
         <input className="input-btn" type="submit" value="Submit" />
       </form>
     </div>
