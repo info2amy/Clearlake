@@ -4,19 +4,19 @@
 }
 
 .indiv-cabin-list {
-  background-color: #61e295;
   border: 3px black solid;
-  margin: 20px 20vw;
+  margin: 10px 20vw;
   padding: 1px;
   width: 170px;
-  height: 70px;
-  background-image: url("/Users/amykumar/seiGarnet/2ndUnit/projectWeek/clearlake/src/images/blankSign.png");
+  height: 99px;
+  background-image: url("/Users/amykumar/seiGarnet/2ndUnit/projectWeek/clearlake/src/images/blankSign2.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 a {
   text-decoration: none;
+  font-weight: bold;
   color: black;
   padding: 0;
   margin: 0;
@@ -31,6 +31,7 @@ h1 {
 }
 
 h3 {
+  font-family: "Andika New Basic", sans-serif;
   margin-top: 25px;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -76,7 +77,7 @@ ul {
   }
 
   .indiv-cabin-list {
-    margin: 40px 10px;
-    width: 125px;
+    margin: 1px 10px;
+    width: 145px;
   }
 }

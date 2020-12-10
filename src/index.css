@@ -2,13 +2,15 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    "Andika New Basic", sans-serif;
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-image: url("images/IMG_20180705_201114331_HDR.jpg"); */
+  background-image: url("images/IMG_20180705_201114331_HDR.jpg");
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Andika+New+Basic:wght@700&display=swap");
