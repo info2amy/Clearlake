@@ -1,12 +1,26 @@
 .indiv-cabin-list {
-  background-color: aqua;
+  background-color: #95ebeb;
   border: 2px navy solid;
-  /* text-decoration:  none; */
   margin: 40px 100px;
+  width: 10%;
 }
 
 .background {
+  background-color: black;
   min-height: 100vh;
   background-size: cover;
   background-position: center;
+  animation: fade 3.5s ease-in-out 0s infinite alternate;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0.7;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
 }

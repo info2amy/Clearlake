@@ -7,7 +7,9 @@ export default function Nav() {
     <nav className="navbar">
       <Link to="/"> Home</Link>
       <br />
-      <Link to="/history">History of Clearlake</Link>
+      <Link to="/history">
+        <button>History of Clearlake</button>
+      </Link>
       <br />
       <button>Check local Weather</button>
       <br />
