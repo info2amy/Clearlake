@@ -4,14 +4,16 @@
 }
 
 .history-header {
-  height: 300px;
-  /* width: 80vh; */
-  background-image: url("https://i.dlpng.com/static/png/6810781_preview.png");
+  height: 350px;
+  /* width: 80%; */
+  background-image: url("/Users/amykumar/seiGarnet/2ndUnit/projectWeek/clearlake/src/images/scrollCropped.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .history-header h2 {
-  padding-top: 130px;
+  padding-top: 150px;
+  font-family: "Great Vibes", cursive;
+  font-size: 40px;
 }

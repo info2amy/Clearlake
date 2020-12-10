@@ -4,13 +4,15 @@
 }
 
 .indiv-cabin-list {
-  background-color: #95ebeb;
-  border: 2px navy solid;
+  background-color: #61e295;
+  border: 2px #062c25 solid;
+  box-shadow: 4, #0c3d3b;
   margin: 40px 100px;
   width: 35%;
+  height: 85px;
 }
 
-.background {
+.background-images {
   background-color: black;
   min-height: 100vh;
   background-size: cover;
@@ -30,12 +32,12 @@
   }
 }
 
-@media only screen and (min-width: 700px) {
-  .Homepage {
+/* @media only screen and (min-width: 700px) {
+  .background ul {
     display: flex;
-    flex-direction: column;
   }
   .indiv-cabin-list {
-    width: 100px;
+    display: block;
+    width: 120px;
   }
-}
+} */
