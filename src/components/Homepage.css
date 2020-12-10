@@ -5,15 +5,21 @@
 
 .indiv-cabin-list {
   background-color: #61e295;
-  border: 2px #062c25 solid;
-  margin: 40px 100px;
-  width: 35%;
-  height: 85px;
+  border: 3px black solid;
+  margin: 20px 20vw;
+  padding: 1px;
+  width: 170px;
+  height: 70px;
+  background-image: url("/Users/amykumar/seiGarnet/2ndUnit/projectWeek/clearlake/src/images/blankSign.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 a {
   text-decoration: none;
-  color: #4d4949;
+  color: black;
+  padding: 0;
+  margin: 0;
 }
 
 h1 {
@@ -25,8 +31,15 @@ h1 {
 }
 
 h3 {
-  margin-top: 20px;
-  margin-bottom: 5px;
+  margin-top: 25px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-size: 23px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .background-images {
@@ -56,8 +69,14 @@ h3 {
     padding-top: 25px;
   }
 
+  ul {
+    margin-top: 0;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+  }
+
   .indiv-cabin-list {
-    /* display: block; */
+    margin: 40px 10px;
     width: 125px;
   }
 }
