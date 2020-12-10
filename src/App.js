@@ -10,6 +10,7 @@ import CabinPages from './components/CabinPages';
 import LakeHistory from './components/LakeHistory';
 import AddCabinEvent from "./components/AddCabinEvent";
 import Calendar from "./components/Calendar";
+import Weather from "./components/Weather";
 
 import './App.css';
 
@@ -58,6 +59,10 @@ export default function App() {
 
       <Route path="/calendar">
         <Calendar />
+      </Route>
+
+      <Route path="/weather">
+        <Weather />
       </Route>
     </div>
   )

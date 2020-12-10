@@ -1,8 +1,13 @@
+.Homepage {
+  text-align: center;
+  display: inline;
+}
+
 .indiv-cabin-list {
   background-color: #95ebeb;
   border: 2px navy solid;
   margin: 40px 100px;
-  width: 10%;
+  width: 35%;
 }
 
 .background {
@@ -22,5 +27,15 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .Homepage {
+    display: flex;
+    flex-direction: column;
+  }
+  .indiv-cabin-list {
+    width: 100px;
   }
 }

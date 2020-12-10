@@ -5,15 +5,21 @@ import "./Nav.css";
 export default function Nav() {
   return (
     <nav className="navbar">
-      <Link to="/"> Home</Link>
+      <Link to="/">
+        <button>Homepage</button>
+      </Link>
       <br />
       <Link to="/history">
         <button>History of Clearlake</button>
       </Link>
       <br />
-      <button>Check local Weather</button>
+      <Link to="/calendar">
+        <button>Clearlake Calendar</button>
+      </Link>
       <br />
-      <button>See Clearlake Calendar</button>
+      <Link to="/weather">
+        <button>Check local Weather</button>
+      </Link>
     </nav>
   );
 }

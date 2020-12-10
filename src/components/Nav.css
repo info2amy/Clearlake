@@ -3,5 +3,19 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  height: 45px;
+  align-items: center;
+  height: 65px;
+}
+
+button {
+  height: 35px;
+  background-color: #b1e6f8;
+}
+
+@media only screen and (min-width: 700px) {
+  button {
+    width: 150px;
+    font-family: "Andika New Basic", sans-serif;
+    font-weight: 700;
+  }
 }
