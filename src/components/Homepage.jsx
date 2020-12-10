@@ -48,7 +48,7 @@ export default function Homepage(props) {
     return (
       <div className="indiv-cabin-list" key={cabin.id}>
         <h3>{cabin.fields.cabin}</h3>
-        <Link to={`/indivCabin/${cabin.id}`}>Cabin page</Link>
+        <Link to={`/indivCabin/${cabin.id}`}>to cabin page</Link>
       </div>
     );
   });
@@ -58,7 +58,7 @@ export default function Homepage(props) {
       className="background-images"
       style={{ backgroundImage: `url(${images[count]})` }}
     >
-      <header>Clearlake - a Family Happening!</header>
+      <h1>Clearlake - a Family Happening!</h1>
       <ul>{eachCabin}</ul>
     </div>
   );

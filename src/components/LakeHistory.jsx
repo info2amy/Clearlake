@@ -13,13 +13,21 @@ export default function LakeHistory() {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
         obcaecati dicta vitae libero voluptatum. Reprehenderit sequi molestiae
         praesentium? Possimus, eveniet. Libero, corrupti numquam cupiditate
-        quisquam veniam aspernatur unde distinctio officia!
+        quisquam veniam aspernatur unde distinctio officia. Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Perspiciatis obcaecati dicta
+        vitae libero voluptatum. Reprehenderit sequi molestiae praesentium?
+        Possimus, eveniet. Libero, corrupti numquam cupiditate quisquam veniam
+        aspernatur unde distinctio officia!
       </p>
       <br />
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, sint
         aut! Nihil, minus. Animi, fugit eum incidunt quas at error, harum,
-        maxime esse nulla vel atque? Laboriosam earum ab illo.
+        maxime esse nulla vel atque? Laboriosam earum ab illo. Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Perspiciatis obcaecati dicta
+        vitae libero voluptatum. Reprehenderit sequi molestiae praesentium?
+        Possimus, eveniet. Libero, corrupti numquam cupiditate quisquam veniam
+        aspernatur unde distinctio officia!
       </p>
       <br />
       <p>
@@ -31,7 +39,11 @@ export default function LakeHistory() {
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, sint
         aut! Nihil, minus. Animi, fugit eum incidunt quas at error, harum,
-        maxime esse nulla vel atque? Laboriosam earum ab illo.
+        maxime esse nulla vel atque? Laboriosam earum ab illo. Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Perspiciatis obcaecati dicta
+        vitae libero voluptatum. Reprehenderit sequi molestiae praesentium?
+        Possimus, eveniet. Libero, corrupti numquam cupiditate quisquam veniam
+        aspernatur unde distinctio officia!
       </p>
       <br />
       <Link to="/">back to Homepage</Link>

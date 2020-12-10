@@ -9,6 +9,8 @@
 
 button {
   height: 35px;
+  font-family: "Andika New Basic", sans-serif;
+  font-weight: 700;
   background-color: #b1e6f8;
 }
 

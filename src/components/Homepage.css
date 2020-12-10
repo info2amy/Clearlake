@@ -6,10 +6,27 @@
 .indiv-cabin-list {
   background-color: #61e295;
   border: 2px #062c25 solid;
-  box-shadow: 4, #0c3d3b;
   margin: 40px 100px;
   width: 35%;
   height: 85px;
+}
+
+a {
+  text-decoration: none;
+  color: #4d4949;
+}
+
+h1 {
+  font-family: "Andika New Basic", sans-serif;
+  font-size: 30px;
+  background-color: royalblue;
+  height: 11vh;
+  padding-top: 8px;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 5px;
 }
 
 .background-images {
@@ -32,12 +49,15 @@
   }
 }
 
-/* @media only screen and (min-width: 700px) {
-  .background ul {
-    display: flex;
+/*  - - - - - - - - - - - - - - - - - - - - - */
+@media only screen and (min-width: 700px) {
+  h1 {
+    height: 8vh;
+    padding-top: 25px;
   }
+
   .indiv-cabin-list {
-    display: block;
-    width: 120px;
+    /* display: block; */
+    width: 125px;
   }
-} */
+}

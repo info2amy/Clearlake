@@ -1,19 +1,39 @@
 .history-page {
   background-image: url("https://www.myfreetextures.com/wp-content/uploads/2014/10/paper59d5-900x1168.jpg");
-  margin: 20px 80px;
+  background-size: cover;
 }
 
 .history-header {
   height: 350px;
-  /* width: 80%; */
+  width: 90vw;
   background-image: url("/Users/amykumar/seiGarnet/2ndUnit/projectWeek/clearlake/src/images/scrollCropped.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  /* align-items: center; */
 }
 
 .history-header h2 {
   padding-top: 150px;
   font-family: "Great Vibes", cursive;
-  font-size: 40px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.history-page p {
+  margin: 10px 30px;
+  font-family: "Great Vibes", cursive;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+/*  - - - - - - - - - - - - - - - - - - - - - - - - - - */
+@media only screen and (min-width: 700px) {
+  .history-header h2 {
+    font-size: 41px;
+  }
+
+  .history-page p {
+    margin: 20px 80px;
+  }
 }
