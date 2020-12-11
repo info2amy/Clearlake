@@ -52,6 +52,7 @@ export default function AddCabinEvent(props) {
   return (
     <div className="submit-form">
       <h3>Add an event to your cabin's history log!:</h3>
+      <br />
       <form onSubmit={handleSubmit} className="create-form">
         <input
           className="input-event"

@@ -1,3 +1,20 @@
 .indiv-cabin {
-  background-color: #bf82f8;
+  background-image: url("https://www.myfreetextures.com/wp-content/uploads/2011/06/grungy-rough-old-worn-parchment-paper-900x1093.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.indiv-cabin h2 {
+  padding: 20px;
+  background-color: #caaf86;
+  font-family: "Lobster Two", cursive;
+  font-size: 36px;
+}
+
+/*  - - - - - - - - - - - - - - - - - - - - - - - - - - */
+@media only screen and (min-width: 700px) {
+  .indiv-cabin h2 {
+    font-size: 46px;
+  }
 }

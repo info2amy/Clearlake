@@ -4,20 +4,21 @@
 }
 
 .history-header {
-  height: 350px;
+  height: 250px;
   width: 90vw;
   background-image: url("/Users/amykumar/seiGarnet/2ndUnit/projectWeek/clearlake/src/images/scrollCropped.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  /* align-items: center; */
+  margin: 0 auto;
 }
 
 .history-header h2 {
-  padding-top: 150px;
+  padding-top: 100px;
   font-family: "Great Vibes", cursive;
   font-size: 30px;
   text-align: center;
+  margin-top: 0;
 }
 
 .history-page p {
@@ -29,8 +30,13 @@
 
 /*  - - - - - - - - - - - - - - - - - - - - - - - - - - */
 @media only screen and (min-width: 700px) {
+  .history-header {
+    height: 420px;
+  }
+
   .history-header h2 {
-    font-size: 41px;
+    font-size: 50px;
+    padding-top: 155px;
   }
 
   .history-page p {

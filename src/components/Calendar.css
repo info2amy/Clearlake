@@ -1,3 +1,67 @@
 .calendar-page {
-  background-color: #ff00dd;
+  height: 100vh;
+  margin-top: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calendar-page h3 {
+  background-color: #f14ddc;
+  height: 60px;
+  width: 100vw;
+  margin-top: 0;
+  padding-top: 10px;
+}
+
+.calendar-page .img1 {
+  height: 75px;
+  width: 200px;
+  background-image: url("https://cdn.pixabay.com/photo/2017/06/16/07/26/sign-2408065__480.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.calendar-page .img2 {
+  height: 100px;
+  width: 200px;
+  background-image: url("https://cdn.pixabay.com/photo/2018/03/31/23/41/site-3279650__480.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.calendar-page .img3 {
+  height: 280px;
+  width: 375px;
+  background-image: url("https://cdn.pixabay.com/photo/2015/09/05/20/28/calendar-925109__480.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.calendar-page a {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 8px;
+}
+
+/*  - - - - - - - - - - - - - - - - - - - - - - - - - - */
+@media only screen and (min-width: 700px) {
+  .calendar-page .img1 {
+    height: 200px;
+    width: 500px;
+  }
+
+  .calendar-page .img2 {
+    height: 200px;
+    width: 600px;
+  }
+
+  .calendar-page .img3 {
+    height: 600px;
+    width: 600px;
+  }
 }

@@ -33,7 +33,6 @@ export default function CabinPages(props) {
 
   return (
     <div className="indiv-cabin">
-      <h5>Clearlake * * * Clearlake</h5>
       {indivCabinInfo && (
         <>
           <h2>Hello {indivCabinInfo.fields.cabin} Family!</h2>
@@ -44,7 +43,9 @@ export default function CabinPages(props) {
         triggerRefresh={props.triggerRefresh}
         refresh={props.refresh}
       />
-      <Link to="/">back to Homepage</Link>
+      <Link to="/">
+        <button>back to Homepage</button>
+      </Link>
     </div>
   );
 }

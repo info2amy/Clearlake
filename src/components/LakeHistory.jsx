@@ -5,6 +5,7 @@ import "./LakeHistory.css";
 export default function LakeHistory() {
   return (
     <div className="history-page">
+      <br />
       <div className="history-header">
         <h2>The Story of Clearlake</h2>
       </div>
@@ -46,7 +47,9 @@ export default function LakeHistory() {
         aspernatur unde distinctio officia!
       </p>
       <br />
-      <Link to="/">back to Homepage</Link>
+      <Link to="/">
+        <button>back to Homepage</button>
+      </Link>
     </div>
   );
 }
