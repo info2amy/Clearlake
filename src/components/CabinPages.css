@@ -12,6 +12,29 @@
   font-size: 36px;
 }
 
+.indiv-cabin a {
+  position: relative;
+  bottom: 0;
+  margin-bottom: 1px;
+}
+
+/* .dataDisplay {
+  display: flex;
+  flex-direction: row;
+} */
+
+.dateAndContributor h4 {
+  margin: 0;
+}
+
+.dateAndContributor h3 {
+  margin: 0;
+}
+
+.dataDisplay p {
+  font-size: 35px;
+}
+
 /*  - - - - - - - - - - - - - - - - - - - - - - - - - - */
 @media only screen and (min-width: 700px) {
   .indiv-cabin h2 {

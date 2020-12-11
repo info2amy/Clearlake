@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import linkImage1 from "../images/lake1.jpg";
-import linkImage2 from "../images/lake2.jpg";
+// import linkImage2 from "../images/lake2.jpg";
 import linkImage3 from "../images/lake3.jpg";
 import linkImage4 from "../images/lake4.jpg";
 import linkImage5 from "../images/lake5.jpg";
@@ -15,7 +15,6 @@ import "./Homepage.css";
 export default function Homepage(props) {
   const images = [
     linkImage1,
-    linkImage2,
     linkImage3,
     linkImage4,
     linkImage5,

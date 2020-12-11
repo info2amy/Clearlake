@@ -1,3 +1,11 @@
-a {
-  text-align: center;
+.submit-form h3 {
+  margin-top: 105px;
+}
+
+.submit-form .submit-boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 20vh;
 }

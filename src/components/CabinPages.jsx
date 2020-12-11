@@ -22,10 +22,12 @@ export default function CabinPages(props) {
   // MAP will map through the filtered events for the individual cabin, to render our events information
   const cabinEventsJSX = cabinEvents.map((event) => {
     return (
-      <div key={event.id}>
+      <div className="dataDisplay" key={event.id}>
         <br />
-        <h5>on {event.fields.eventDate}</h5>
-        <h3>{event.fields.contributor} added</h3>
+        <div className="dateAndContributor">
+          <h4>on {event.fields.eventDate}</h4>
+          <h3>{event.fields.contributor} added</h3>
+        </div>
         <p>{event.fields.event}</p>
       </div>
     );
