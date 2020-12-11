@@ -9,7 +9,7 @@
   padding: 1px;
   width: 170px;
   height: 99px;
-  background-image: url("/Users/amykumar/seiGarnet/2ndUnit/projectWeek/clearlake/src/images/blankSign2.png");
+  background-image: url("../images/blankSign2.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
